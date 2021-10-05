@@ -8,8 +8,8 @@ namespace BattleRoyale
     {
         static void Main(string[] args)
         {
-            List<Player> new_players = new List<Player>(){ };
             Field field = new Field(new ClassicLoot());
+            int gameSpeed = 3000;
 
             // Add players
             while (true)
@@ -30,10 +30,12 @@ namespace BattleRoyale
             // Game ticks
             while (true)
             {
-                field.Round(3000);
-                System.Threading.Thread.Sleep(3000);
+                field.Round(gameSpeed);
+                System.Threading.Thread.Sleep(gameSpeed);
                 if (field.IsOver()!=null) {break;}
             }
+
+            // Game over
             Console.WriteLine($"\n  {field.IsOver().Name}[{field.IsOver().Health}]");
             field.IsOver().showEquipment();
             field.printScoreboard();
