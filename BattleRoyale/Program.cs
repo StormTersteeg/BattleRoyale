@@ -11,7 +11,7 @@ namespace BattleRoyale
     {
         static void Main(string[] args)
         {
-            Map map = new Field(new ClassicLoot());
+            Map map = new ClassicMap(new ClassicLoot());
             int gameSpeed = 3000;
 
             // Add players

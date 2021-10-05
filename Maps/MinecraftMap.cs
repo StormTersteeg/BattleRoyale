@@ -7,19 +7,42 @@ using System.Security.Cryptography;
 
 namespace Maps
 {
-    public class Field : Map
+    public class MinecraftMap : Map
     {
-        public Field(Loottable Loot)
+        public MinecraftMap(Loottable Loot)
         {
             this.Loot = Loot;
         }
 
-        public void Carepackage(Player Player)
+        public void Creeper(Player Player)
         {
-            if (Loot.Count()>2)
+            Player.Hurt(5);
+            if (Player.Health>0)
             {
-                Console.WriteLine($"  {Player.Name}[{Player.Health}] found a carepackage.");
-                Loot.playerLoot(Player);
+                Console.WriteLine($"  {Player.Name}[{Player.Health}] survived a creeper explosion.");
+            } else
+            {
+                Console.WriteLine($"  {Player.Name}[{Player.Health}] was exploded by a creeper.");
+            }
+        }
+
+        public void Zombie(Player Player)
+        {
+            Player.Hurt(2);
+            if (Player.Health>0)
+            {
+                Console.WriteLine($"  {Player.Name}[{Player.Health}] killed a Zombie.");
+            } else
+            {
+                Console.WriteLine($"  {Player.Name}[{Player.Health}] was killed by a Zombie.");
+            }
+        }
+
+        public void Treasure(Player Player)
+        {
+            if (Loot.Count()>1)
+            {
+                Console.WriteLine($"  {Player.Name}[{Player.Health}] found a treasure chest.");
                 Loot.playerLoot(Player);
                 Loot.playerLoot(Player);
             } else
@@ -30,7 +53,7 @@ namespace Maps
 
         public override void playerRoam(Player Player)
         {
-            int chance = RandomNumberGenerator.GetInt32(0,13);
+            int chance = RandomNumberGenerator.GetInt32(0,14);
 
             switch (chance)
             {
@@ -47,7 +70,10 @@ namespace Maps
                     CombatHandler.Ambush(Player, RandomPlayer(Player));
                     break;
                 case var expression when (chance >= 12 && chance < 13):
-                    Carepackage(Player);
+                    Creeper(Player);
+                    break;
+                case var expression when (chance >= 13 && chance < 14):
+                    Zombie(Player);
                     break;
                 default:
                     break;
