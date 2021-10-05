@@ -17,7 +17,7 @@ namespace BattleRoyale
                 Console.Clear();
                 Console.WriteLine($"\n  Add players! {field.PlayerNames()}\n  Type done when you're done.\n");
                 string name = Console.ReadLine();
-                if (name!="done")
+                if (name!="done" && name!="")
                 {
                     field.Players.Add(new Player(name, new List<Equipment>(){ }));
                 } else
