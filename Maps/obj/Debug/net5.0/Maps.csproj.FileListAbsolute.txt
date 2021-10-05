@@ -1,0 +1,17 @@
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\Maps.csproj.AssemblyReference.cache
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\Maps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\Maps.AssemblyInfoInputs.cache
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\Maps.AssemblyInfo.cs
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\Maps.csproj.CoreCompileInputs.cache
+C:\Users\storm\source\repos\BattleRoyale\Maps\bin\Debug\net5.0\Maps.deps.json
+C:\Users\storm\source\repos\BattleRoyale\Maps\bin\Debug\net5.0\Maps.dll
+C:\Users\storm\source\repos\BattleRoyale\Maps\bin\Debug\net5.0\ref\Maps.dll
+C:\Users\storm\source\repos\BattleRoyale\Maps\bin\Debug\net5.0\Maps.pdb
+C:\Users\storm\source\repos\BattleRoyale\Maps\bin\Debug\net5.0\Controller.dll
+C:\Users\storm\source\repos\BattleRoyale\Maps\bin\Debug\net5.0\Model.dll
+C:\Users\storm\source\repos\BattleRoyale\Maps\bin\Debug\net5.0\Controller.pdb
+C:\Users\storm\source\repos\BattleRoyale\Maps\bin\Debug\net5.0\Model.pdb
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\Maps.csproj.CopyComplete
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\Maps.dll
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\ref\Maps.dll
+C:\Users\storm\source\repos\BattleRoyale\Maps\obj\Debug\net5.0\Maps.pdb

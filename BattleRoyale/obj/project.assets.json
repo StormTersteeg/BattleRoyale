@@ -2,6 +2,46 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Controller/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Controller.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Controller.dll": {}
+        }
+      },
+      "Loottables/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Loottables.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Loottables.dll": {}
+        }
+      },
+      "Maps/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Controller": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Maps.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Maps.dll": {}
+        }
+      },
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -15,6 +55,21 @@
     }
   },
   "libraries": {
+    "Controller/1.0.0": {
+      "type": "project",
+      "path": "../Controller/Controller.csproj",
+      "msbuildProject": "../Controller/Controller.csproj"
+    },
+    "Loottables/1.0.0": {
+      "type": "project",
+      "path": "../Loottables/Loottables.csproj",
+      "msbuildProject": "../Loottables/Loottables.csproj"
+    },
+    "Maps/1.0.0": {
+      "type": "project",
+      "path": "../Maps/Maps.csproj",
+      "msbuildProject": "../Maps/Maps.csproj"
+    },
     "Model/1.0.0": {
       "type": "project",
       "path": "../Model/Model.csproj",
@@ -23,6 +78,9 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Controller >= 1.0.0",
+      "Loottables >= 1.0.0",
+      "Maps >= 1.0.0",
       "Model >= 1.0.0"
     ]
   },
@@ -53,6 +111,15 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Controller\\Controller.csproj": {
+              "projectPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Controller\\Controller.csproj"
+            },
+            "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Loottables\\Loottables.csproj": {
+              "projectPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Loottables\\Loottables.csproj"
+            },
+            "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Maps\\Maps.csproj": {
+              "projectPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Maps\\Maps.csproj"
+            },
             "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Model\\Model.csproj"
             }

@@ -1,0 +1,15 @@
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\Loottables.csproj.AssemblyReference.cache
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\Loottables.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\Loottables.AssemblyInfoInputs.cache
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\Loottables.AssemblyInfo.cs
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\Loottables.csproj.CoreCompileInputs.cache
+C:\Users\storm\source\repos\BattleRoyale\Loottables\bin\Debug\net5.0\Loottables.deps.json
+C:\Users\storm\source\repos\BattleRoyale\Loottables\bin\Debug\net5.0\Loottables.dll
+C:\Users\storm\source\repos\BattleRoyale\Loottables\bin\Debug\net5.0\ref\Loottables.dll
+C:\Users\storm\source\repos\BattleRoyale\Loottables\bin\Debug\net5.0\Loottables.pdb
+C:\Users\storm\source\repos\BattleRoyale\Loottables\bin\Debug\net5.0\Model.dll
+C:\Users\storm\source\repos\BattleRoyale\Loottables\bin\Debug\net5.0\Model.pdb
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\Loottables.csproj.CopyComplete
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\Loottables.dll
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\ref\Loottables.dll
+C:\Users\storm\source\repos\BattleRoyale\Loottables\obj\Debug\net5.0\Loottables.pdb

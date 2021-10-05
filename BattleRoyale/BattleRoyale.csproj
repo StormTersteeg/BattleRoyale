@@ -5,4 +5,11 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj" />
+    <ProjectReference Include="..\Loottables\Loottables.csproj" />
+    <ProjectReference Include="..\Maps\Maps.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -14,3 +14,12 @@ C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoy
 C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\ref\BattleRoyale.dll
 C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.pdb
 C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.genruntimeconfig.cache
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\Controller.dll
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\Loottables.dll
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\Maps.dll
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\Model.dll
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\Controller.pdb
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\Loottables.pdb
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\Maps.pdb
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\Model.pdb
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.csproj.CopyComplete
