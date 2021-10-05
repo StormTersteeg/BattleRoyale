@@ -1,4 +1,7 @@
 ﻿using Loottables;
+using Model;
+using Maps;
+using Controller;
 using System;
 using System.Collections.Generic;
 
@@ -8,7 +11,7 @@ namespace BattleRoyale
     {
         static void Main(string[] args)
         {
-            Field field = new Field(new ClassicLoot());
+            Map field = new Field(new ClassicLoot());
             int gameSpeed = 3000;
 
             // Add players
@@ -30,7 +33,7 @@ namespace BattleRoyale
             // Game ticks
             while (true)
             {
-                field.Round(gameSpeed);
+                RoundHandler.Round(field, gameSpeed);
                 System.Threading.Thread.Sleep(gameSpeed);
                 if (field.IsOver()!=null) {break;}
             }

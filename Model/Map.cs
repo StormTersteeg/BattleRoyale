@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Model
 {
-    public class Map
+    public abstract class Map
     {
         public int round_count {get;set;} = 1;
         public List<Player> Players {get;set;} = new List<Player>(){};
@@ -74,5 +74,7 @@ namespace Model
                 Console.WriteLine(String.Format("  {0,-17}{1,-17}{2,-17}", player.Name, player.Kills, player.Equipment.Count));
             }
         }
+
+        public abstract void playerRoam(Player Player);
     }
 }

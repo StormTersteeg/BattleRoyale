@@ -1,10 +1,11 @@
-﻿using System;
+﻿using BattleRoyale;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BattleRoyale
+namespace Model
 {
     public class Player
     {

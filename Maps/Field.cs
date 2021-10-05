@@ -1,10 +1,11 @@
-﻿using Controller;
+﻿using BattleRoyale;
+using Controller;
 using Model;
 using System;
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace BattleRoyale
+namespace Maps
 {
     public class Field : Map
     {
@@ -27,7 +28,7 @@ namespace BattleRoyale
             }
         }
 
-        public void playerRoam(Player Player)
+        public override void playerRoam(Player Player)
         {
             int chance = RandomNumberGenerator.GetInt32(0,13);
 
@@ -51,27 +52,6 @@ namespace BattleRoyale
                 default:
                     break;
             }
-        }
-
-        public void Round(int timeout)
-        {
-            Players = Players.OrderBy( x => new Random().Next() ).ToList( );
-            Console.WriteLine($"\n  Round {round_count} : Alive {PlayersAlive()}");
-            try
-            {
-                foreach (Player Player in Players)
-                {
-                    if (IsOver()!=null) {break;}
-                    if (Player.Health>0)
-                    {
-                        System.Threading.Thread.Sleep(timeout);
-                        playerRoam(Player);
-                    }
-                }
-            } catch (Exception e) {
-                Console.WriteLine(e);
-            }
-            round_count++;
         }
     }
 }
