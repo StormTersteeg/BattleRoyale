@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleRoyale
 {
-    class Equipment
+    public class Equipment
     {
         public string Name {get;set;}
         public int Power{get;set;} = 0;

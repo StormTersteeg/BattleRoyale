@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "Model/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Model.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Model.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "Model/1.0.0": {
-      "type": "project",
-      "path": "../Model/Model.csproj",
-      "msbuildProject": "../Model/Model.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "Model >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\storm\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\BattleRoyale\\BattleRoyale.csproj",
-      "projectName": "BattleRoyale",
-      "projectPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\BattleRoyale\\BattleRoyale.csproj",
+      "projectUniqueName": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Model\\Model.csproj",
+      "projectName": "Model",
+      "projectPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\storm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\BattleRoyale\\obj\\",
+      "outputPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\storm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\storm\\source\\repos\\BattleRoyale\\Model\\Model.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
