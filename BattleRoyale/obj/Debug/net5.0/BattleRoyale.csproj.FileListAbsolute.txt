@@ -1,0 +1,16 @@
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\BattleRoyale.exe
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\BattleRoyale.deps.json
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\BattleRoyale.runtimeconfig.json
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\BattleRoyale.runtimeconfig.dev.json
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\BattleRoyale.dll
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\ref\BattleRoyale.dll
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\bin\Debug\net5.0\BattleRoyale.pdb
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.csproj.AssemblyReference.cache
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.AssemblyInfoInputs.cache
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.AssemblyInfo.cs
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.csproj.CoreCompileInputs.cache
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.dll
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\ref\BattleRoyale.dll
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.pdb
+C:\Users\storm\source\repos\BattleRoyale\BattleRoyale\obj\Debug\net5.0\BattleRoyale.genruntimeconfig.cache
