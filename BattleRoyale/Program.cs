@@ -11,18 +11,18 @@ namespace BattleRoyale
     {
         static void Main(string[] args)
         {
-            Map field = new Field(new ClassicLoot());
+            Map map = new Field(new ClassicLoot());
             int gameSpeed = 3000;
 
             // Add players
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine($"\n  Add players! {field.PlayerNames()}\n  Type done when you're done.\n");
+                Console.WriteLine($"\n  Add players! {map.PlayerNames()}\n  Type done when you're done.\n");
                 string name = Console.ReadLine();
                 if (name!="done" && name!="")
                 {
-                    field.Players.Add(new Player(name, new List<Equipment>(){ }));
+                    map.Players.Add(new Player(name, new List<Equipment>(){ }));
                 } else
                 {
                     break;
@@ -33,15 +33,15 @@ namespace BattleRoyale
             // Game ticks
             while (true)
             {
-                RoundHandler.Round(field, gameSpeed);
+                RoundHandler.Round(map, gameSpeed);
                 System.Threading.Thread.Sleep(gameSpeed);
-                if (field.IsOver()!=null) {break;}
+                if (map.IsOver()!=null) {break;}
             }
 
             // Game over
-            Console.WriteLine($"\n  {field.IsOver().Name}[{field.IsOver().Health}]");
-            field.IsOver().showEquipment();
-            field.printScoreboard();
+            Console.WriteLine($"\n  {map.IsOver().Name}[{map.IsOver().Health}]");
+            map.IsOver().showEquipment();
+            map.printScoreboard();
             Console.ReadLine();
         }
     }
