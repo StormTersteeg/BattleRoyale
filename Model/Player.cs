@@ -98,12 +98,13 @@ namespace Model
         {
             if (Health<10)
             {
-                if (BestConsumableEquipment()!=null)
+                Equipment e = BestConsumableEquipment();
+                if (e!=null)
                 {
-                    Health = Health + BestConsumableEquipment().Healing;
+                    Health = Health + e.Healing;
                     if (Health>10) {Health = 10;}
-                    Console.WriteLine($"  {Name}[{Health}] used {BestConsumableEquipment().Name} to heal({BestConsumableEquipment().Healing}).");
-                    Equipment.Remove(BestConsumableEquipment());
+                    Console.WriteLine($"  {Name}[{Health}] used {e.Name} to heal({e.Healing}).");
+                    if (e.Protection==0) { Equipment.Remove(e); }
                 } else
                 {
                     if (Health<10) {Health++;}
@@ -125,10 +126,10 @@ namespace Model
         {
             Equipment = Equipment.OrderBy(o=>o.Name).ToList();
             Equipment.Reverse();
-            Console.WriteLine(String.Format("  {0,-17} {1,-17} {2,-17} {3,-17} {4,-17}", "Equipment", "Power", "CritChance", "Healing", "Protection"));
+            Console.WriteLine(String.Format("  {0,-24} {1,-6} {2,-6} {3,-6} {4,-6}", "Equipment", "Power", "CritChance", "Healing", "Protection"));
             foreach (Equipment e in Equipment)
             {
-                Console.WriteLine(String.Format("  {0,-17} {1,-17} {2,-17} {3,-17} {4,-17}", e.Name, e.Power, e.CritChance, e.Healing, e.Protection));
+                Console.WriteLine(String.Format("  {0,-24} {1,-6} {2,-6} {3,-6} {4,-6}", e.Name, e.Power, e.CritChance, e.Healing, e.Protection));
             }
         }
     }

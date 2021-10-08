@@ -10,7 +10,7 @@ namespace Loottables
     public class MinecraftLoot : Loottable
     {
         public MinecraftLoot() {
-            this.Loot = new List<Equipment>{
+            Loot = new List<Equipment>{
                 new Equipment("Netherite Sword", 8, 0, 0, 0),
                 new Equipment("Diamond Sword", 7, 0, 0, 0),
                 new Equipment("Iron Sword", 6, 0, 0, 0),

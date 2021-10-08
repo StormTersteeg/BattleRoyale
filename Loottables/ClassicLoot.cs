@@ -10,7 +10,7 @@ namespace Loottables
     public class ClassicLoot : Loottable
     {
         public ClassicLoot() {
-            this.Loot = new List<Equipment>{
+            Loot = new List<Equipment>{
                 new Equipment("Knife", 2, 0, 0, 0),
                 new Equipment("Knife", 2, 0, 0, 0),
                 new Equipment("Knife", 2, 0, 0, 0),
