@@ -10,31 +10,42 @@ namespace Controller
 {
     public static class CombatHandler
     {
-        public static void Fight(Player a, Player b)
+        public static void XKilledY(Player a, Player b)
         {
             string toPrint;
+            Equipment eq = a.BestFightEquipment();
+
+            if (eq.Killmessage.Equals(""))
+            {
+                toPrint = $"  {a.Name}[{a.Health}] killed {b.Name}[{b.Health}] using their {eq.Name}.";
+            } else
+            {
+                toPrint = "  " + eq.Killmessage.Replace("{a.Name}", a.Name).Replace("{b.Name}", b.Name).Replace("{a.Health}", "" + a.Health).Replace("{b.Health}", "" + b.Health).Replace("{eq.Name}", "" + eq.Name);
+            }
+
+            a.Kills++;
+            foreach (Equipment e in b.Equipment) {a.Equipment.Add(e);}
+            Console.WriteLine(toPrint);
+        }
+
+        public static void Fight(Player a, Player b)
+        {
 
             b.Hurt(a.BestFightEquipment().Damage());
             if (b.Health<=0)
             {
-                toPrint = $"  {a.Name}[{a.Health}] killed {b.Name}[{b.Health}] using their {a.BestFightEquipment().Name}.";
-                a.Kills++;
-                foreach (Equipment e in b.Equipment) {a.Equipment.Add(e);}
+                XKilledY(a, b);
             } else
             {
                 a.Hurt(b.BestFightEquipment().Damage());
                 if (a.Health<=0)
                 {
-                    toPrint = $"  {b.Name}[{b.Health}] killed {a.Name}[{a.Health}] using their {b.BestFightEquipment().Name}.";
-                    b.Kills++;
-                    foreach (Equipment e in a.Equipment) {b.Equipment.Add(e);}
+                    XKilledY(b, a);
                 } else
                 {
-                    toPrint = $"  {a.Name}[{a.Health}] and {b.Name}[{b.Health}] fight.";
+                    Console.WriteLine($"  {a.Name}[{a.Health}] and {b.Name}[{b.Health}] fight.");
                 }
             }
-
-            Console.WriteLine(toPrint);
         }
 
         public static void Ambush(Player a, Player b)

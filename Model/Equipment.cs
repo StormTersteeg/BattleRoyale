@@ -5,9 +5,10 @@ namespace BattleRoyale
     public class Equipment
     {
         public string Name {get;set;}
+        public string Killmessage {get;set;}
         public int Power{get;set;} = 0;
-        public int Healing{get;set;} = 0;
         public int CritChance{get;set;} = 0;
+        public int Healing{get;set;} = 0;
         public int Protection{get;set;} = 0;
 
         public int Damage()
@@ -30,6 +31,7 @@ namespace BattleRoyale
         public Equipment(string Name, string Killmessage, int Power, int CritChance, int Healing, int Protection)
         {
             this.Name = Name;
+            this.Killmessage = Killmessage;
             this.Power = Power;
             this.CritChance = CritChance;
             this.Healing = Healing;
