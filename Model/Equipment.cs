@@ -27,13 +27,15 @@ namespace BattleRoyale
             }
         }
 
-        public Equipment(string Name, int Power, int Healing, int CritChance, int Protection)
+        public Equipment(string Name, string Killmessage, int Power, int CritChance, int Healing, int Protection)
         {
             this.Name = Name;
             this.Power = Power;
-            this.Healing = Healing;
             this.CritChance = CritChance;
+            this.Healing = Healing;
             this.Protection = Protection;
         }
+
+        public Equipment(string Name, int Power, int CritChance, int Healing, int Protection) : this(Name, "", Power, CritChance, Healing, Protection){}
     }
 }
